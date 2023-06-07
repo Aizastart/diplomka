@@ -354,13 +354,14 @@
             --hide-mobile: false;
           "
         >
+
           <div class="layout__content">
             <div class="feedback">
               <div class="feedback__title heading">Обратная связь</div>
 
               <form
                 method="post"
-                action=""
+                action="/admin/mail/mail.php"
                 data-feedback-form-wrapper
                 class="feedback__form"
               >
@@ -394,7 +395,7 @@
                       class="feedback__field-area"
                     >
                       <input
-                        name="from"
+                        name="email"
                         data-feedback-form-field='{"isRequired": true, "errorMessage": "Неверно заполнено поле Email"}'
                         type="text"
                         value=""
@@ -423,48 +424,15 @@
                       class="feedback__field-error"
                     ></div>
                   </div>
-
-                  <div
-                    data-feedback-form-field-area
-                    class="feedback__field-area agree"
-                  >
-                    <label class="agree__checkbox">
-                      <input
-                        data-feedback-form-agree='{"errorMessage": "Необходимо подтвердить согласие"}'
-                        name="agree"
-                        type="checkbox"
-                        value=""
-                        autocomplete="off"
-                        class="agree__field"
-                      />
-                      <span class="agree__content">
-                        <span class="agree__btn icon-check"></span>
-                        <span class="agree__label">
-                          Настоящим подтверждаю, что я ознакомлен и согласен с
-                          условиями оферты и политики конфиденциальности *
-                        </span>
-                      </span>
-                    </label>
-                    <div
-                      data-feedback-form-field-error
-                      class="feedback__field-error"
-                    ></div>
-                  </div>
-
-                  <input
-                    type="hidden"
-                    value="Форма обратной связи"
-                    data-feedback-form-field
-                    name="subject"
-                  />
+             
 
                   <div class="feedback__submit">
-                    <button
+                    <input
                       class="button button_size-l feedback__submit-btn"
                       type="submit"
                     >
                       Отправить
-                    </button>
+                    </input>
                   </div>
                 </div>
               </form>

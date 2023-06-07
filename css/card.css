@@ -25,6 +25,10 @@
 .btn{
   margin-top: 2px;
 }
+.card{
+  background-color: wheat;
+}
+
 
 
 @media (max-width:524px ) { 
