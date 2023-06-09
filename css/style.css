@@ -4051,3 +4051,8 @@
   border:black 1px solid;
   margin:  0 0 10px 0;
 }
+
+.title_dexcriotion{
+  width: 50%;
+  font-weight: 700;
+}

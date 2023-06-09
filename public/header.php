@@ -126,7 +126,9 @@
 
                 <div class="header__area-logo">
                   <span class="header__logo">
+                    <a href="/index.php">
                     <h1>Sweet Store</h1>
+                  </a>
                   </span>
                 </div>
 
@@ -315,7 +317,7 @@
                   <div class="menu__head">Меню</div>
 
                   <div class="menu__section">
-                    <div class="menu__title">Верхнее меню</div>
+                    
                     <ul
                       class="menu__list"
                       data-navigation
@@ -344,7 +346,7 @@
                       >
                         <div class="menu__controls">
                           <a
-                            href="#"
+                            href="/about.php"
                             class="menu__link"
                             data-navigation-link="/page/about-us"
                           >
@@ -353,21 +355,7 @@
                         </div>
                       </li>
 
-                      <li
-                        class="menu__item"
-                        data-navigation-item
-                        data-menu-item-id="11141472"
-                      >
-                        <div class="menu__controls">
-                          <a
-                            href="#"
-                            class="menu__link"
-                            data-navigation-link="/page/contacts"
-                          >
-                            Контакты
-                          </a>
-                        </div>
-                      </li>
+                     
 
                       <li
                         class="menu__item"
@@ -376,7 +364,7 @@
                       >
                         <div class="menu__controls">
                           <a
-                            href="#"
+                            href="/delivery.php"
                             class="menu__link"
                             data-navigation-link="/page/delivery"
                           >

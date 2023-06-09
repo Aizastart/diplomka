@@ -54,7 +54,7 @@
 
                     <a
                       class="menu-link"
-                      href="#"
+                      href="/allprise.php"
                       data-menu-item-id="11141470"
                     >
                       Каталог
@@ -62,51 +62,23 @@
 
                     <a
                       class="menu-link"
-                      href="#"
+                      href="/about.php"
                       data-menu-item-id="11141471"
                     >
                       О нас
                     </a>
 
-                    <a
-                      class="menu-link"
-                      href="#"
-                      data-menu-item-id="11141472"
-                    >
-                      Контакты
-                    </a>
+                    
 
                     <a
                       class="menu-link"
-                      href="#"
+                      href="/delivery.php"
                       data-menu-item-id="11141473"
                     >
                       Доставка
                     </a>
 
-                    <a
-                      class="menu-link"
-                      href="#t"
-                      data-menu-item-id="11141474"
-                    >
-                      Оплата
-                    </a>
-
-                    <a
-                      class="menu-link"
-                      href="#"
-                      data-menu-item-id="11141475"
-                    >
-                      Личный кабинет
-                    </a>
-
-                    <a
-                      class="menu-link"
-                      href="#"
-                      data-menu-item-id="11141481"
-                    >
-                      Наши новости
-                    </a>
+                    
                   </div>
 
                   <div class="menu-item" data-menu-handle="main-menu">
@@ -120,7 +92,7 @@
                       </button>
                     </div>
 
-                    <a
+                    <!-- <a
                       class="menu-link"
                       href="#"
                       data-menu-item-id="11141470"
@@ -142,7 +114,7 @@
                       data-menu-item-id="11141472"
                     >
                       Тех потдержка
-                    </a>
+                    </a> -->
                   </div>  
                 </div>
                 <div class="footer__area-sidebar">

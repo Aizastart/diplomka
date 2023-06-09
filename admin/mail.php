@@ -57,13 +57,20 @@
                     <div class="col-md-12">
                       <div class="card-body trei" style='background: while;'>
                         
-                          <p>Пользователь </p>
-                          <h5><?php echo $res->name?></h5>
-                          <p>Email </p>
-                          <h5><?php echo $res->email ?></h5>
-                          <p>Сообщение </p>
-
-                          <p><?php echo $res->content ?>
+                      <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Имя пользователя</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="<?php echo $res->name?>">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Email пользователя</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> <?php echo $res->email ?></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Описание отзыва</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"><?php echo $res->content ?></textarea>
+  </div>
+</form>
                           
                         
                           
@@ -73,6 +80,7 @@
                   </div>
                 </div>
               <?php endwhile ?>
+              
               </div>
         </div>
     </div>
