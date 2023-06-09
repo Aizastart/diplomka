@@ -37,8 +37,8 @@
           <p class="lead text-muted">Сегодня:
             <?php echo date("d.m.Y") ?>
           </p>
-          <p>Обратная связь
-          </p>
+          <h2>Обратная связь
+          </h2>
           
                 </div>
             </section>
