@@ -1,4 +1,4 @@
-
+<?php session_start()?>
 
 
 <!DOCTYPE html>
@@ -77,6 +77,8 @@
     href="https://static.insales-cdn.com/assets/static-versioned/3.11/static/icons/icons-minimal/style.css"
     media="print"
     onload="this.media='all'"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 
    
 
@@ -153,16 +155,10 @@
                     </button>
                   </div>
 
-                  <a
-                    href="user.html"
-                    class="header__control-btn header__cabinet"
-                  >
-                    <span class="icon icon-user"></span>
-                  </a>
-
+                 
                   
                   <a
-                    href="#"
+                    href="/basket.php"
                     class="header__control-btn header__cart"
                   >
                     <span class="icon icon-cart">
