@@ -33,7 +33,7 @@ $allPrises=$allPrise->fetchAll(PDO::FETCH_OBJ);
         <div class="splide__slide">
 
            
-          <form action="/cart_items" method="post" data-product-id="222581034"
+        <form action="../basket.php?id=<?php echo $allPre->id?>" method="post" 
               class="product-preview  is-zero-count-shown      is-forbid-order-over-existing ">
               <div class="product-preview__content">
                 <div class="product-preview__area-photo">
@@ -55,7 +55,7 @@ $allPrises=$allPrise->fetchAll(PDO::FETCH_OBJ);
                 <div class="product-preview__area-title">
                   <div class="product-preview__title">
                     <a href="/product/myagkaya-igrushka-medved-boiko-plyushevyy-mishka-bezhevyy-s-bantom">
-                    <?php echo $allPre->name?></a>
+                    <?php echo $allPre->name?> </a>
                   </div>
                 </div>
                 <div class="product-preview__area-description">
@@ -63,13 +63,16 @@ $allPrises=$allPrise->fetchAll(PDO::FETCH_OBJ);
                 <div class="product-preview__area-bottom">
                   <div class="product-preview__price">
                     <span class="product-preview__price-old"><?php echo $allPre->sales?> сом</span>
-                    <span class="product-preview__price-cur"><?php echo $allPre->sales?> сом</span>
+                    <span class="product-preview__price-cur"><?php echo $allPre->hotsales?> сом</span>
+                    <p><?php echo $allPre->description?></p>
                   </div>
                   <div class="product-preview__controls">
-                    <input type="hidden" name="quantity" value="1" />
-                    <input type="hidden" name="variant_id" value="379011756" />
-                    <button class="button button_wide product-preview__buy-btn" type="submit" data-item-add
-                      class="button">В корзину</button>
+                    <input type="hidden" name="name" value="<?php echo $allPre->name ?>">
+                    <input type="hidden" name="price" value="<?php echo $allPre->sales ?>">
+                    <input type="number" name="quantity" value="1" class="form-control">
+                    
+                    <input type="submit" name="add_to_cart" class="button button_wide product-preview__buy-btn"   
+                      value="В корзину">
                   </div>
                 </div>
               </div>

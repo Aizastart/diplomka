@@ -110,7 +110,10 @@ if(isset($_POST['add_to_cart'])){
 ?>
 
 </table>
-
+<a href='/order.php'>
+      <button class='btn btn-warning m-2'>Оформить заказ</button>
+      </a>
+      <a href="/allprise.php"><button class='btn btn-warning m-2'>Каталог товаров</button></a>
  </div>
 
 </div>

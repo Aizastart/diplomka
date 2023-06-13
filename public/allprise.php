@@ -62,12 +62,12 @@ $allPrises=$allPrise->fetchAll(PDO::FETCH_OBJ);
                 <div class="product-preview__area-bottom">
                   <div class="product-preview__price">
                     <span class="product-preview__price-old"><?php echo $allPre->sales?> сом</span>
-                    <span class="product-preview__price-cur"><?php echo $allPre->sales?> сом</span>
+                    <span class="product-preview__price-cur"><?php echo $allPre->hotsales?> сом</span>
                     <p><?php echo $allPre->description?></p>
                   </div>
                   <div class="product-preview__controls">
                     <input type="hidden" name="name" value="<?php echo $allPre->name ?>">
-                    <input type="hidden" name="price" value="<?php echo $allPre->sales ?>">
+                    <input type="hidden" name="price" value="<?php echo $allPre->hotsales ?>">
                     <input type="number" name="quantity" value="1" class="form-control">
                     
                     <input type="submit" name="add_to_cart" class="button button_wide product-preview__buy-btn"   
